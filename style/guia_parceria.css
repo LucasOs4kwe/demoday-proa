@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: normal;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    font-size: 1.5em;
+}
+p{
+    font-size: 1em;
+}
+html,
+body{
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+}
+
+/* CABEÇALHO ----------------------------------------*/
+.header{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Cunia', sans-serif;
+    margin: 0;
+    justify-content: space-between;
+}
+.menu{
+    width: 100%;
+    padding: 18px 8%;
+    display: inline;
+}
+.nav-bar{
+    padding-bottom: 2%;
+    
+}
+.nav-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-left: 140px;
+    font-size: 20px;
+    position: relative;
+}
+.nav-item{
+    float: left;
+}
+.nav-item a{
+    display: block;
+    color: #7ac120;
+    margin-right: 60px;
+    text-align: center;
+    padding: 2px 16px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav-item a:hover{
+    color: #88e015;
+    text-decoration: underline;
+}
+.dropdown-item a:hover{
+    color: #144617;
+}
+.dropdown-list{
+    background-color: #7ac120;
+    position: absolute;
+    visibility: hidden;
+}
+.menu .nav-list .nav-item li:hover ul {
+    visibility: visible;
+}
+#btn-login{
+    float: right;
+}
+.logo-ciclix{
+    width: 220px;
+    float: left;
+}
+
+
+
+
+/* CONTEÚDO PRINCIPAL ----------------------------------------*/
+#carousel-slider, .carousel-inner{
+    margin: 0 auto;
+    max-width: 100%;
+    width: 980px;
+}
+.guia_parceria_content{
+    margin: 30px;
+}
+.guia_parceria_content h3{
+    font-weight: bold;
+    font-size: 45px;
+}
+.guia_parceria_content p{
+    color: #000000;
+    text-align: justify;
+    font-size: 20px;
+}
+.titulo_parceria1{
+    font-size: 45px;
+    font-weight: bold;
+    margin: 20px;
+}
+.guia_parceria_content .div-passos ul li p{
+    text-align: center;
+    margin-right: 10px
+}
+.guia_parceria_content .div-passos{
+   display: flex;
+   flex-direction: row;
+   margin-top: 20%;
+   margin-bottom: 5%;
+}
+.guia_parceria_content .div-passos::after{
+    clear: both;
+    content: " ";
+    display: block;
+}
+.guia_parceria_content .div-passos > div ul i{
+    margin-left: 43%;
+    font-size: 5em;
+    margin-bottom: 3.5%;
+    color: #144617;
+}
+.guia_parceria_content .div-passos > div ul i:hover{
+    color: #7ac120;
+}
+
+.btn_parceria{
+    margin-bottom: 6%;
+    text-align: center;
+    
+}
+.btn_parceria a{
+    text-decoration: none;
+    font-size: 35px;
+    border: solid 1px #144617;
+    padding: 20px;
+    color: #fff;
+    background-color: #144617;
+    border-radius: 12px;
+}
+.btn_parceria a:hover{
+    color: #fff;
+}
+
+
+
+/* FOOTER ----------------------------------------*/
+footer{
+    background-color: #7ac120;
+    border-top: 1px solid #0a0a09;
+}
+footer a{
+    text-decoration: none;
+}
+.footer-bottom .wrapper p{
+    color: #fff;
+}
+.wrapper{
+    color: #fff;
+}
+footer h3{
+    font-weight: bold;
+    font-size: 25px;
+}
+.btn-instagram:hover, .btn-fb:hover, .btn-linkedin:hover, .btn-twitter:hover {
+    color: #144617;
+}
+.btn-instagram, .btn-fb, .btn-linkedin, .btn-twitter {
+    color: #fff;
+}
+.footer-box{
+    width: 31%;
+    padding: 1%;
+    float: left;
+}
+footer .wrapper::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.local{
+    width: 80%;
+}
+.local h3{
+    margin-top: 20px;
+}
+.local h3,p{
+    margin-bottom: 20px;
+}
+.footer-list li{
+    margin-bottom: 15px;
+}
+.footer-list list::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.fab {
+    font-size: 30px;
+    margin-right: 10px;
+    float: left;
+}
+.footer-bottom{
+    border-top: 1px solid #000000;
+    background-color: #144617;
+    padding-bottom: 20px;
+}
+.footer-bottom p{
+    font-weight: 600;
+    margin-top: 40px;
+    text-align: center;
+}
+.local a{
+    text-decoration: none;
+    color: #FFF;
+}
+.local a:hover{
+    color: #144617;
+}
+#btn-footer{
+    background-color: #fff;
+    padding: 10px 5px;
+    width: 50%;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+}
+#btn-footer:hover{
+    background-color: initial;
+    color: aliceblue;
+    border: #fff solid 1px;
+    border-radius: 12px;
+}

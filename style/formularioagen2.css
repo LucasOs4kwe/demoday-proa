@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: normal;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    font-size: 1.5em;
+}
+p{
+    font-size: 1em;
+}
+html,
+body{
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    background-color: #7ac120;
+    font-family: 'Open Sans', sans-serif
+}
+
+/* HEADER E BARRA DE NAVEGAÇÃO */
+.header{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Cunia', sans-serif;
+    margin: 0;
+    justify-content: space-between;
+}
+.menu{
+    width: 100%;
+    padding: 18px 8%;
+    display: inline;
+}
+.nav-bar{
+    padding-bottom: 2%;
+    
+}
+.nav-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-left: 50px;
+    font-size: 20px;
+    position: relative;
+}
+.nav-item{
+    float: left;
+}
+.nav-item a{
+    display: block;
+    color: #7ac120;
+    margin-right: 20px;
+    text-align: center;
+    padding: 2px 16px;
+    font-size: 20px;
+}
+.nav-item a:hover{
+    color: #88e015;
+    text-decoration: underline;
+}
+.dropdown-item a:hover{
+    color: #144617;
+}
+.dropdown-list{
+    background-color: #7ac120;
+    position: absolute;
+    visibility: hidden;
+}
+.menu .nav-list .nav-item li:hover ul {
+    visibility: visible;
+}
+#btn-login{
+    float: right;
+}
+.logo-ciclix{
+    width: 220px;
+    float: left;
+}
+
+/* ------------------------------ */
+
+.conteudoPag{
+    display: flex;
+    align-items: center;
+    margin: 15%;
+}
+.conteudoPag .container_form h4{
+    margin-top: 2%;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.conteudoPag .imgprincipal img{
+    margin-top: 5%;
+    width:100%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.conteudoPag .container_form h3{
+    font-size: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.conteudoPag .container_form{
+    position: absolute;
+    padding: 70px 50px;
+    margin-top: 10%;
+    /* margin-left: 150px; */
+    /* width: calc(100% - 150px); */
+    /* height: 100%; */
+    background: #fff;
+    border-radius: 12px;
+    height: 74%;
+    width: 73%;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+.conteudoPag .container_form .formAgend{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;}
+    .conteudoPag .container_form .formAgend .inputBox{
+    position: relative;
+    margin-bottom: 35px;
+}
+.conteudoPag .container_form .formAgend .inputBox.Agend{
+    width: 47%;
+    
+    }
+    .conteudoPag .container_form .formAgend .inputBox.Agend2{
+        width: 50%;
+    }
+    .conteudoPag .container_form .formAgend .inputBox input,
+    .conteudoPag .container_form .formAgend .inputBox textarea{
+        width: 100%;
+        resize: none;
+        padding: 5px 0;
+        font-size: 18px;
+        font-weight: 300;
+        color: #333;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #777;
+    }
+    .conteudoPag .container_form .formAgend .inputBox textarea{
+        height: 120px;
+    }
+    .conteudoPag .container_form .formAgend .inputBox span{
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        pointer-events: none;
+        font-size: 18px;
+        font-weight: 300;
+        transition: 0.3s;
+    }
+    .conteudoPag .container_form .formAgend .inputBox input:focus ~ span,
+    .conteudoPag .container_form .formAgend .inputBox input:valid ~ span,
+    .conteudoPag .container_form .formAgend .inputBox textarea:focus ~ span,
+    .conteudoPag .container_form .formAgend .inputBox textarea:valid ~ span
+    {
+        transform: translateY(-20px);
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #095a55;
+        font-weight: 500;
+    }
+    .conteudoPag .container_form .formAgend .inputBox input[type="submit"]
+    {
+    position: relative;
+    cursor: pointer;
+    background: #8ebf26;
+    color: #fff;
+    border-radius: 12px;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+    float: right;
+    }
+    .conteudoPag .container_form .formAgend .inputBox input[type="checkbox"]
+    {
+    position: relative;
+    cursor: pointer;
+    background: #8ebf26;
+    color: #fff;
+    border-radius: 12px;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+    display: inline-block;
+    width: 10%;
+    }
+    .conteudoPag .container_form .formAgend .inputBox input[type="submit"]:hover{
+        background: #144617;
+    }
+    .conteudoPag .container_form .formAgend .inputBox input[type="file"]{
+        padding: 10.7%
+    }
+    .conteudoPag .container_form .formAgend .inputBox input[type="date"]{
+        padding: 5%;
+        margin-top: 10px;
+    }
+
+footer p{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25%;
+    margin-left: 43%;
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+#imgAgend{
+    width: 30%;
+    float: right;
+}

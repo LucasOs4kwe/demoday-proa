@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: normal;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    font-size: 1.5em;
+}
+p{
+    font-size: 1em;
+}
+html,
+body{
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    background-color: #7ac120;
+}
+
+/* HEADER E BARRA DE NAVEGAÇÃO */
+.header{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Cunia', sans-serif;
+    margin: 0;
+    justify-content: space-between;
+}
+.menu{
+    width: 100%;
+    padding: 18px 8%;
+    display: inline;
+}
+.nav-bar{
+    padding-bottom: 2%;
+    
+}
+.nav-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-left: 50px;
+    font-size: 20px;
+    position: relative;
+}
+.nav-item{
+    float: left;
+}
+.nav-item a{
+    display: block;
+    color: #7ac120;
+    margin-right: 20px;
+    text-align: center;
+    padding: 2px 16px;
+    font-size: 20px;
+}
+.nav-item a:hover{
+    color: #88e015;
+    text-decoration: underline;
+}
+.dropdown-item a:hover{
+    color: #144617;
+}
+.dropdown-list{
+    background-color: #7ac120;
+    position: absolute;
+    visibility: hidden;
+}
+.menu .nav-list .nav-item li:hover ul {
+    visibility: visible;
+}
+#btn-login{
+    float: right;
+}
+.logo-ciclix{
+    width: 220px;
+    float: left;
+}
+
+/* PÁGINA ---------------------------------------------- */
+
+.container .checkAgend{
+    position: absolute;
+    padding: 70px 50px;
+    padding-left: 250px;
+    margin-left: 175px;
+    width: 80%;
+    height: 70%;
+    margin-top: 2%;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+.container .checkAgend i{
+    color: #7ac120;
+    font-size: 120px;
+    margin-left: 34%;
+}
+.container .checkAgend h3{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 3%;
+}
+.container .checkAgend p{
+    text-align: center;
+    font-size: 25px;
+}
+.container .checkAgend h3, p{
+    margin-right: 20%;
+}
+.container .checkAgend img{
+    width: 25%;
+    float: right;
+    margin-right: 48%;
+}

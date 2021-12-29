@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Reciclavel</title>
+    <link rel="stylesheet" href="../style/jogo.css">
+</head>
+<body>
+    <p><strong>Selecione a opção correta para cada lata de lixo para acessar o site:</strong></p> 
+
+    <div class="lixeiras">
+
+        <div class="imagens1"><img src="../Imagens/lixeira amarela.png" alt="lixeira"></div>
+        <div class="selecao1">
+            <label for="lataamarela"><strong>Lixeira Amarela</strong></label>
+            <select name="lixo" id="lixo1">
+                <option selected disabled value=""><strong>Selecione...</strong></option>
+                <option value="Vidro"><strong>Vidro</strong></option>
+                <option value="Plástico"><strong>Plástico</strong></option>
+                <option value="Papel"><strong>Papel</strong></option>
+                <option value="Metal"><strong>Metal</strong></option>
+            </select>
+        </div>
+        
+
+        <div class="imagens2"><img src="../Imagens/lixeira azul.png" alt="lixeira"></div>
+        <div class="selecao2">
+            <label for="lataazul"><strong>Lixeira Azul</strong></label>
+            <select name="lixo" id="lixo2">
+                <option selected disabled value=""><strong>Selecione...</strong></option>
+                <option value="Vidro"><strong>Vidro</strong></option>
+                <option value="Plástico"><strong>Plástico</strong></option>
+                <option value="Papel"><strong>Papel</strong></option>
+                <option value="Metal"><strong>Metal</strong></option>
+            </select>
+        </div>
+
+        <div class="lixeiras2">
+            <div class="imagens3"><img src="../Imagens/lixeira vermelha.png" alt="lixeira"></div>
+            <div class="selecao3">
+                <label for="latavermelha"><strong>Lixeira Vermelha</strong></label>
+                <select name="lixo" id="lixo3">
+                    <option selected disabled value=""><strong>Selecione...</strong></option>
+                    <option value="Vidro"><strong>Vidro</strong></option>
+                    <option value="Plástico"><strong>Plástico</strong></option>
+                    <option value="Papel"><strong>Papel</strong></option>
+                    <option value="Metal"><strong>Metal</strong></option>
+                </select>
+            </div>
+            
+            <div class="imagens4"><img src="../Imagens/lixeira verde.png" alt="lixeira"></div>
+            <div class="selecao4">
+                <label for="lataverde"><strong>Lixeira Verde</strong></label>
+                <select name="lixo" id="lixo4">
+                    <option selected disabled value=""><strong>Selecione...</strong></option>
+                    <option value="Vidro"><strong>Vidro</strong></option>
+                    <option value="Plástico"><strong>Plástico</strong></option>
+                    <option value="Papel"><strong>Papel</strong></option>
+                    <option value="Metal"><strong>Metal</strong></option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div id="res"></div>
+    <input class="btn" type="button" value="Conferir Respostas" onclick="clicar()">
+    
+    <script type="text/JavaScript">
+        function clicar(){
+            var select1 = window.document.getElementById('lixo1')
+            var select2 = window.document.getElementById('lixo2')
+            var select3 = window.document.getElementById('lixo3')
+            var select4 = window.document.getElementById('lixo4')
+            var res = window.document.getElementById('res')
+
+            var answer1 = (select1.value)
+            var answer2 = (select2.value)
+            var answer3 = (select3.value)
+            var answer4 = (select4.value)
+            
+            if(answer1 == "Metal" && (answer2 == "Papel") && (answer3 == "Plástico") && (answer4 == "Vidro")){
+            res.innerHTML = 'Parabéns você acertou!!! 4/4'
+            document.getElementById('res').style.color="green" 
+            window.location.href = ""}
+
+            else{res.innerHTML = 'Ops... você errou na reciclagem Tente novamente !'
+            document.getElementById('res').style.color="red"}
+
+
+}
+    </script>
+
+    
+</body>
+</html>

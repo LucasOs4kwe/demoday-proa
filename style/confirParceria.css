@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: whitesmoke;
+    }
+    section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background:#144617;
+    }
+ul{
+    list-style: none;
+}
+
+.container .nav{
+    position: absolute;
+    float: inline-start;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.container .nav a{
+    text-decoration: none;
+    color: #fff;
+}
+.container{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+    
+}
+
+
+
+
+.container .contactinfo ul.info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+.container .contactinfo ul.info li span:nth-child(1){
+width: 30px;
+min-width: 30px;
+}
+.container .contactinfo ul.info li span:nth-child(1) img{
+    max-width: 100%;
+    filter: invert(1);
+}
+.container .contactinfo ul.info li span:nth-child(2){
+color: #fff;
+margin-left: 10px;
+font-weight: 300;
+}
+.container .contactinfo ul.sci{
+    position: relative;
+    display: flex;
+}
+.container .contactinfo ul.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+.container .contactinfo ul.sci li a{
+text-decoration: none;
+}
+.container .contactinfo ul.sci li a img{
+filter: invert(1);
+}
+
+.container .contactform{
+position: absolute;
+padding: 70px 50px;
+padding-left: 250px;
+margin-left: 150px;
+width: calc(100% - 150px);
+height: 100%;
+background: #fff;
+border-radius: 12px;
+box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+.container .contactform h2{
+color: #7ac120;
+font-size: 35px;
+margin-top: 20%;
+}
+.container .contactform p{
+    font-size: 23px;
+    color: #000;
+}
+
+.container .contactform .formbox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;}
+.container .contactform .formbox .inputbox{
+position: relative;
+margin-bottom: 35px;
+}
+.container .contactform .formbox .inputbox.w50{
+width: 47%;
+
+}
+.container .contactform .formbox .inputbox.w100{
+    width: 100%;
+}
+.container .contactform .formbox .inputbox input,
+.container .contactform .formbox .inputbox textarea{
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #777;
+}
+.container .contactform .formbox .inputbox textarea{
+    height: 120px;
+}
+.container .contactform .formbox .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+.container .contactform .formbox .inputbox input:focus ~ span,
+.container .contactform .formbox .inputbox input:valid ~ span,
+.container .contactform .formbox .inputbox textarea:focus ~ span,
+.container .contactform .formbox .inputbox textarea:valid ~ span
+{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #095a55;
+    font-weight: 500;
+}
+.container .contactform .formbox .inputbox input[type="submit"]
+{
+position: relative;
+cursor: pointer;
+background: #8ebf26;
+color: #fff;
+border-radius: 12px;
+border: none;
+max-width: 150px;
+padding: 12px;
+
+
+}
+.container .contactform .formbox .inputbox input[type="submit"]:hover{
+    background: #144617;
+}
+#rodape-logo{
+    width: 250px;
+    position: absolute;
+    left: 37%;
+    top: 65%;
+}

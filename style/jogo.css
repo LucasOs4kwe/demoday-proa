@@ -1,0 +1,56 @@
+img{
+    height: 200px;
+    
+    }
+    p{
+    font-size: 18pt;
+    font-family:sans-serif ;
+    margin-left: 30px;
+    margin-top: 32px;
+    
+    }
+    input{
+        margin-top: 110px;
+        margin-left: 720px;
+        border-collapse: collapse;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 12pt;
+        font-family: sans-serif;
+        cursor: pointer;
+        
+    }
+    .imagens1{
+        margin-top: 50px;
+        margin-left: 120px;
+    }
+    .imagens2{
+        padding-top: 100px;
+        margin-left: 120px;
+    }
+    .imagens3{
+        padding-top: 100px;
+        margin-left: 120px;
+    }
+    .imagens4{
+        padding-top: 100px;
+        margin-left: 120px;
+    }
+    
+.selecao1{
+    margin-left: 95px;
+}
+.selecao2{
+    margin-left: 120px;
+}
+.selecao3{
+    margin-left: 91px;
+}
+.selecao4{
+    margin-left: 113px;
+}
+#res{
+    text-align: center;
+    font-size: 22pt;
+    font-family: sans-serif;
+}

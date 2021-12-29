@@ -1,0 +1,27 @@
+#sectionarrow{
+    width: 100%;
+    position: relative;
+    padding-bottom: 5%; 
+}
+.arrowdown{
+    width: 40px;
+    height: 40px;
+    background-image: url(/Imagens/pngwing.com.png);
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: arrowdown;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes arrowdown{
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 20px;
+    }
+}

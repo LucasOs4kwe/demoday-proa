@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: normal;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    font-size: 1.5em;
+}
+p{
+    font-size: 1em;
+}
+html,
+body{
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* HEADER E BARRA DE NAVEGAÇÃO */
+.header{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Cunia', sans-serif;
+    margin: 0;
+    justify-content: space-between;
+}
+.menu{
+    width: 100%;
+    padding: 18px 8%;
+    display: inline;
+}
+.nav-bar{
+    padding-bottom: 2%;
+    
+}
+.nav-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-left: 50px;
+    font-size: 20px;
+    position: relative;
+}
+.nav-item{
+    float: left;
+}
+.nav-item a{
+    display: block;
+    color: #7ac120;
+    margin-right: 20px;
+    text-align: center;
+    padding: 2px 16px;
+    font-size: 20px;
+}
+.nav-item a:hover{
+    color: #88e015;
+    text-decoration: underline;
+}
+.dropdown-item a:hover{
+    color: #144617;
+}
+.dropdown-list{
+    background-color: #7ac120;
+    position: absolute;
+    visibility: hidden;
+}
+.menu .nav-list .nav-item li:hover ul {
+    visibility: visible;
+}
+#btn-login{
+    float: right;
+}
+.logo-ciclix{
+    width: 220px;
+    float: left;
+}
+
+
+.main_content_data{
+    margin: 5% 3% 3% 5%;
+    font-family: 'Open Sans', sans-serif;
+}
+.main_content_data img{
+    width: 40%;
+}
+.main_content_data h2{
+    margin-bottom: 2%;
+    font-size: 60px;
+    font-weight: bold;
+}
+.main_content_data p{
+    font-size: 20px;
+    margin-right: 50%;
+    text-align: justify;
+}
+.main_content_data strong{
+    font-weight: bold;
+}
+/* FOOTER CONTEÚDO */
+
+footer{
+    background-color: #7ac120;
+    border-top: 1px solid #0a0a09;
+}
+
+.wrapper{
+    color: #fff;
+}
+footer h3{
+    font-weight: bold;
+    font-size: 25px;
+}
+.btn-instagram:hover, .btn-fb:hover, .btn-linkedin:hover, .btn-twitter:hover {
+    color: #144617;
+}
+.btn-instagram, .btn-fb, .btn-linkedin, .btn-twitter {
+    color: #fff;
+}
+.footer-box{
+    width: 31%;
+    padding: 1%;
+    float: left;
+}
+footer .wrapper::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.local{
+    width: 80%;
+}
+.local h3{
+    margin-top: 20px;
+}
+.local h3,p{
+    margin-bottom: 20px;
+}
+.footer-list li{
+    margin-bottom: 15px;
+}
+.footer-list list::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.fab {
+    font-size: 30px;
+    margin-right: 10px;
+    float: left;
+}
+.footer-bottom{
+    border-top: 1px solid #000000;
+    background-color: #144617;
+    padding-bottom: 20px;
+}
+.footer-bottom p{
+    font-weight: 600;
+    margin-top: 40px;
+    text-align: center;
+}
+.local a{
+    text-decoration: none;
+    color: #FFF;
+}
+.local a:hover{
+    color: #144617;
+}
+#btn-footer{
+    background-color: #fff;
+    padding: 10px 5px;
+    width: 50%;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+    font-size: 18px;
+}
+#btn-footer:hover{
+    background-color: initial;
+    color: aliceblue;
+    border: #fff solid 1px;
+    border-radius: 12px;
+}
